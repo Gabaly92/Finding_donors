@@ -13142,28 +13142,28 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<h2 id="1)-Decision-Trees">1) Decision Trees<a class="anchor-link" href="#1)-Decision-Trees">&#182;</a></h2><h3 id="a)-A-Real-World-Application-in-the-industry-for-Decision-Trees-is">a) A Real World Application in the industry for Decision Trees is<a class="anchor-link" href="#a)-A-Real-World-Application-in-the-industry-for-Decision-Trees-is">&#182;</a></h3><p>the classification of stars and galaxies Weir, Nicholas, Usama M. Fayyad, and S. Djorgovski. "Automated star/galaxy classification for digitized POSS- II." The Astronomical Journal 109 (1995): 2401.</p>
+<h2 id="1)-Decision-Trees-(https://en.wikipedia.org/wiki/Decision_tree)">1) Decision Trees (<a href="https://en.wikipedia.org/wiki/Decision_tree">https://en.wikipedia.org/wiki/Decision_tree</a>)<a class="anchor-link" href="#1)-Decision-Trees-(https://en.wikipedia.org/wiki/Decision_tree)">&#182;</a></h2><h3 id="a)-A-Real-World-Application-in-the-industry-for-Decision-Trees-is">a) A Real World Application in the industry for Decision Trees is<a class="anchor-link" href="#a)-A-Real-World-Application-in-the-industry-for-Decision-Trees-is">&#182;</a></h3><p>the classification of stars and galaxies Weir, Nicholas, Usama M. Fayyad, and S. Djorgovski. "Automated star/galaxy classification for digitized POSS- II." The Astronomical Journal 109 (1995): 2401.</p>
 <h3 id="b)-The-Strengths-of-the-model-are-as-follows:">b) The Strengths of the model are as follows:<a class="anchor-link" href="#b)-The-Strengths-of-the-model-are-as-follows:">&#182;</a></h3><p>I.Simple to understand and interpret. People are able to understand decision tree models after a brief explanation. Trees can also be displayed graphically in a way that is easy for non-experts to interpret.</p>
 <p>II. Able to handle both numerical and categorical data.[18] Other techniques are usually specialised in analysing datasets that have only one type of variable. (For example, relation rules can be used only with nominal variables while neural networks can be used only with numerical variables.)</p>
 <p>III. Requires little data preparation. Other techniques often require data normalization. Since trees can handle qualitative predictors, there is no need to create dummy variables. However for the sake of a fair comparison between decision trees and the other 2 choosen supervised learning algorithms we will use dummy variables for features that have more then one class</p>
 <h3 id="c)-The-Weaknesses-of-the-model-are-as-follows:">c) The Weaknesses of the model are as follows:<a class="anchor-link" href="#c)-The-Weaknesses-of-the-model-are-as-follows:">&#182;</a></h3><p>I. Trees can be very non-robust. A small change in the training data can result in a big change in the tree, and thus a big change in final predictions.</p>
 <p>II. Decision-tree learners can create over-complex trees that do not generalize well from the training data. This is known as overfitting.[22]) Mechanisms such as pruning are necessary to avoid this problem (with the exception of some algorithms such as the Conditional Inference approach, that does not require pruning)</p>
 <p>III. For data including categorical variables with different numbers of levels, information gain in decision trees is biased in favor of those attributes with more levels. However, the issue of biased predictor selection is avoided by the Conditional Inference approach.</p>
-<h3 id="d)-What-makes-the-model-a-good-candidate-for-the-data-is">d) What makes the model a good candidate for the data is<a class="anchor-link" href="#d)-What-makes-the-model-a-good-candidate-for-the-data-is">&#182;</a></h3><p>that it can easily be rebuilt to adapt to new changes in the data.</p>
-<h2 id="2)-SVM">2) SVM<a class="anchor-link" href="#2)-SVM">&#182;</a></h2><h3 id="a)-A-Real-World-Application-in-the-industry-for-SVM-is">a) A Real World Application in the industry for SVM is<a class="anchor-link" href="#a)-A-Real-World-Application-in-the-industry-for-SVM-is">&#182;</a></h3><p>in intrusion detection Chen, Wun-Hwa, Sheng-Hsun Hsu, and Hwang-Pin Shen. "Application of SVM and ANN for intrusion detection." C omputers &amp; Operations Research 32.10 (2005): 2617-2634.</p>
+<h3 id="d)-What-makes-the-model-a-good-candidate-for-the-data-is">d) What makes the model a good candidate for the data is<a class="anchor-link" href="#d)-What-makes-the-model-a-good-candidate-for-the-data-is">&#182;</a></h3><p>that, Decision trees are very good at approximating highly non linear models with complex interactions, like our data here where we have a classification that depends on a number of numerical and categorial features at the same time.</p>
+<h2 id="2)-SVM-https://stats.stackexchange.com/questions/24437/advantages-and-disadvantages-of-svm">2) SVM <a href="https://stats.stackexchange.com/questions/24437/advantages-and-disadvantages-of-svm">https://stats.stackexchange.com/questions/24437/advantages-and-disadvantages-of-svm</a><a class="anchor-link" href="#2)-SVM-https://stats.stackexchange.com/questions/24437/advantages-and-disadvantages-of-svm">&#182;</a></h2><h3 id="a)-A-Real-World-Application-in-the-industry-for-SVM-is">a) A Real World Application in the industry for SVM is<a class="anchor-link" href="#a)-A-Real-World-Application-in-the-industry-for-SVM-is">&#182;</a></h3><p>in intrusion detection Chen, Wun-Hwa, Sheng-Hsun Hsu, and Hwang-Pin Shen. "Application of SVM and ANN for intrusion detection." C omputers &amp; Operations Research 32.10 (2005): 2617-2634.</p>
 <h3 id="b)-The-Strength-of-the-model-are-as-follows:">b) The Strength of the model are as follows:<a class="anchor-link" href="#b)-The-Strength-of-the-model-are-as-follows:">&#182;</a></h3><p>I. It has a regularisation parameter, which makes the user think about avoiding over-fitting.</p>
 <p>II. It uses the kernel trick, so you can build in expert knowledge about the problem via engineering the kernel.</p>
 <p>III. It is defined by a convex optimization problem (no local minima) for which there are efficient methods to solve it.</p>
 <h3 id="c)-The-Weaknesses-of-the-model-are-as-follows:">c) The Weaknesses of the model are as follows:<a class="anchor-link" href="#c)-The-Weaknesses-of-the-model-are-as-follows:">&#182;</a></h3><p>I. The disadvantages are that the theory only really covers the determination of the parameters for a given value of the regularisation and kernel parameters and choice of kernel. In a way the SVM moves the problem of over-fitting from optimising the parameters to model selection. Sadly kernel models can be quite sensitive to over-fitting the model selection criterion</p>
-<h3 id="d)-What-makes-the-model-a-good-candidate-for-the-data-is-that">d) What makes the model a good candidate for the data is that<a class="anchor-link" href="#d)-What-makes-the-model-a-good-candidate-for-the-data-is-that">&#182;</a></h3><p>a data point in the point of view of the SVM algorithm is viewed as a p-dimensional vector (a list of p numbers, in our case 113), and we want to know whether we can separate such points with a (p − 1) dimensional hyperplane.</p>
-<h2 id="3)-Logistic-Regression">3) Logistic Regression<a class="anchor-link" href="#3)-Logistic-Regression">&#182;</a></h2><h3 id="a)-A-Real-World-Application-in-the-industry-for-Logistic-Regression-is">a) A Real World Application in the industry for Logistic Regression is<a class="anchor-link" href="#a)-A-Real-World-Application-in-the-industry-for-Logistic-Regression-is">&#182;</a></h3><p>in Landslide susciptibility mapping in japan Ayalew, Lulseged, and Hiromitsu Yamagishi. "The application of GIS-based logistic regression for landslide susceptibility mapping in the Kakuda-Yahiko Mountains, Central Japan." Geomorphology 65.1 (2005): 15-31.</p>
+<h3 id="d)-What-makes-the-model-a-good-candidate-for-the-data-is-that">d) What makes the model a good candidate for the data is that<a class="anchor-link" href="#d)-What-makes-the-model-a-good-candidate-for-the-data-is-that">&#182;</a></h3><p>In terms of a classification problem with small sample size (less than 100K samples) SVMs can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces, like in the case of our problem here, a data point in the point of view of the SVM algorithm is viewed as a p-dimensional vector (a list of p numbers, in our case 113), and we want to know whether we can separate such points with a (p − 1) dimensional hyperplane</p>
+<h2 id="3)-Logistic-Regression-https://elitedatascience.com/machine-learning-algorithms">3) Logistic Regression <a href="https://elitedatascience.com/machine-learning-algorithms">https://elitedatascience.com/machine-learning-algorithms</a><a class="anchor-link" href="#3)-Logistic-Regression-https://elitedatascience.com/machine-learning-algorithms">&#182;</a></h2><h3 id="a)-A-Real-World-Application-in-the-industry-for-Logistic-Regression-is">a) A Real World Application in the industry for Logistic Regression is<a class="anchor-link" href="#a)-A-Real-World-Application-in-the-industry-for-Logistic-Regression-is">&#182;</a></h3><p>in Landslide susciptibility mapping in japan Ayalew, Lulseged, and Hiromitsu Yamagishi. "The application of GIS-based logistic regression for landslide susceptibility mapping in the Kakuda-Yahiko Mountains, Central Japan." Geomorphology 65.1 (2005): 15-31.</p>
 <h3 id="b)-The-Strengths-of-the-model-are-as-follows:">b) The Strengths of the model are as follows:<a class="anchor-link" href="#b)-The-Strengths-of-the-model-are-as-follows:">&#182;</a></h3><p>I. Convenient probability scores for observations</p>
 <p>II. Efficient implementations available across tools</p>
 <p>III. Multi-collinearity is not really an issue and can be countered with L2 regularization to an extent</p>
 <h3 id="c)The-Weaknesses-of-the-model-are-as-follows:">c)The Weaknesses of the model are as follows:<a class="anchor-link" href="#c)The-Weaknesses-of-the-model-are-as-follows:">&#182;</a></h3><p>I. Doesn’t perform well when feature space is too large</p>
 <p>II. Doesn’t handle large number of categorical features/variables well</p>
 <p>III. Relies on transformations for non-linear features</p>
-<h3 id="d)-What-makes-the-model-a-good-candidate-for-the-data-is-that">d) What makes the model a good candidate for the data is that<a class="anchor-link" href="#d)-What-makes-the-model-a-good-candidate-for-the-data-is-that">&#182;</a></h3><p>it the output of the data is a binary ouput, i.e. it is either the student needs intervention or does not need intervention</p>
+<h3 id="d)-What-makes-the-model-a-good-candidate-for-the-data-is-that">d) What makes the model a good candidate for the data is that<a class="anchor-link" href="#d)-What-makes-the-model-a-good-candidate-for-the-data-is-that">&#182;</a></h3><p>Logistic regression is one of the best methods that can separate a highly non-linear problem that has a lot of features into 2 classification regions</p>
 
 </div>
 </div>
@@ -14161,7 +14161,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Logistic regression is basically a mathematical model used in to guess the probability of an event occurring having been given some previous data. Logistic Regression works with binary data, where either the event happens (1) or the event does not happen (0)</p>
+<p>Logistic regression is basically a mathematical model used to guess the probability of an event occurring having been given some previous data. Logistic Regression works with binary data, where either the event happens (1) or the event does not happen (0). In our case, it is learning from the 13 features that we have about the potential donors and figures out if the event (ie. the donor will make less than $50k or vice versa) will happen or not based on those features. The algorithm figures out the likely hood of the event by defining the relation between that event and the input features which are combined linearly using weights or coefficient values to predict an output value which is the likelyhood of this event.</p>
 
 </div>
 </div>
@@ -14342,13 +14342,13 @@ Final F-score on the testing data: 0.6829
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Below are the five features which are believed to be most important for prediction. They are ordered from highest importance at the top to less importance at the bottom.</p>
-<p>hours-per-week</p>
-<p>capital-gain</p>
-<p>capital-loss</p>
-<p>occupation</p>
-<p>education-num</p>
-<p>hours-per-week greatly influences income than all others. capital-gain and capital-loss would be the 2nd most important features that influences income Finally occupation influences to a less extent than other in the list. Occupation can determine the income only upto certain extent. Similary income dependes also on the education-num as education-num determines the type of occupation that we can get into and thus the income.</p>
+<p>The top five features in my opinion from most important to least important:</p>
+<p>1) Capital gain,
+2) Hours-per-week
+3) Occupation,
+4) Education
+5) Sex</p>
+<p>The reason for this order is because Capital gain is the money made by the individual which is the closest to the income, hours-per-week can vary but if they work a lot of hours than they can get to 50k, Occupation plays a role too because different fields of work have different salary ranges, Education matters too, because it plays a large role in determining their occupation and thus capital gain and finally sex because in almost all fields, men are paid much higher than women, so this can be a huge factor</p>
 
 </div>
 </div>
@@ -14734,7 +14734,9 @@ hj1JkqQBM+xJkiQNmGFPkiRpwP4Bu2MesPHxH9cAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>It appears the visualization displays the five most relevant features for predicting if an individual makes at most or above $50,000 in which three seems to be same as discussed in Question 6.Except Marital_Status and age features all others seems to confirm the features mentioned in Question 6.</p>
+<p>There are 2 features that are the same as the ones discussed in question 6 which are: 
+(capital-gain and hours-per-week)
+and the other 3 are different which are (capital-loss, age and Married_AF_spouse), age makes sense because usually older people have more experience and thus can make more money, the last one, Married_ArmedForces_spouse is good too because usually people who work in the army make a lot of money</p>
 
 </div>
 </div>
